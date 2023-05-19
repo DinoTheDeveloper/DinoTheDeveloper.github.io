@@ -12961,8 +12961,12 @@ header i {
 .input-part button {
   color: #fff;
   cursor: pointer;
-  background: #43AFFC;
+  background: #4169E1;
   transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .input-part button:hover {
