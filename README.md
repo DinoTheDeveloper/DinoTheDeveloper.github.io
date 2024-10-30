@@ -21,6 +21,10 @@ Welcome to my personal portfolio! I'm excited to share my projects and skills wi
 - **Azure**
 - **Kibana**
 
+### ----- Currently Learning -----
+- **Machine Learning**
+- **Data Science**
+
 ## Let's Connect!
 
 I'm always open to new opportunities and would love to discuss any potential job offers. Feel free to reach out if you'd like to collaborate or learn more about my work!
