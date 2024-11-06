@@ -5,8 +5,8 @@ Welcome to my personal portfolio! I'm excited to share my projects and skills wi
 ## Tech Stack
 
 ### ----- CODING -----
-- **Angular**
 - **React**
+- **Angular**
 - **JavaScript / TypeScript**
 - **HTML / CSS**
 - **C#**
