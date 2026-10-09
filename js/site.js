@@ -27,6 +27,20 @@ const FEATURED = [
         tags: ['React', 'Vite', 'Responsive'],
     },
     {
+        id: '75hard', title: '75 Hard', context: 'Personal project', badge: 'React + Firebase',
+        layout: 'phone', tint: '#e3ecfb', shots: 7,
+        short: 'A group challenge app where friends push each other through all 75 days of 75 Hard.',
+        desc: 'A 75 Hard companion app I built with React and Vite. You create or join a group with friends using a short invite code, then log daily check-ins and progress photos to Firebase. A friends-only feed shows everyone\'s progress and check-ins, a countdown calendar tracks all 75 days, and the profile page awards badges for milestones you can show off to the group.',
+        tags: ['React', 'Vite', 'Firebase'],
+    },
+    {
+        id: 'revolveme', title: 'RevolveMe', context: 'Personal project', badge: 'Built for friends',
+        layout: 'phone', tint: '#e8f0ec', shots: 5,
+        short: 'A gym tracker with monthly workout plans, year goals, streaks and gym partners.',
+        desc: 'A gym tracker I built with React and Vite for myself and close friends. Workouts are saved in Firebase and refreshed each month, and each day opens a dropdown of the exercises to do. The analytics section shows year progress with a countdown, the year goals you lock in, and your gym streak. You can add partners to log their weights alongside yours when you train together.',
+        tags: ['React', 'Vite', 'Firebase'],
+    },
+    {
         id: 'forex', title: 'Forex Toolkit', context: 'Personal project',
         layout: 'phone', tint: '#f6eddf', shots: 5,
         short: 'A trading companion with live prices, a trading calculator and market-session hours.',

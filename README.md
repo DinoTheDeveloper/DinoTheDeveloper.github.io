@@ -17,27 +17,13 @@
 | | |
 |---|---|
 | **Daily drivers** | Angular · TypeScript · NgRx · RxJS · Nx · HTML · CSS / SCSS |
-| **Also shipped with** | React · React Native · Flutter · JavaScript · C# · SQL |
+| **Also shipped with** | React · React Native · Flutter · JavaScript · SQL |
 | **Platforms & workflow** | Git · Jira · Firebase · Azure · Agile · A/B testing |
 | **Currently learning** | Machine learning · Data science |
 
 ## About this site
 
-A hand-built, dependency-free static site hosted on GitHub Pages:
-
-- Plain HTML, CSS and JavaScript (no framework or build step)
-- Responsive and mobile-first, with light/dark mode
-- Accessible: semantic markup, keyboard-friendly dialogs, reduced-motion support
-- Optimised WebP images, lazy-loaded
-
-```
-index.html        Page markup
-css/site.css      Styles and theme tokens (brand colour lives in --brand / --accent)
-js/site.js        Project data, project popups, menu, theme toggle, scroll effects
-assets/           CV, avatar and project screenshots
-```
-
-To preview locally, run `python3 -m http.server` in the repo root and open http://localhost:8000.
+A hand-built, dependency-free static site hosted on GitHub
 
 ## Let's connect
 
