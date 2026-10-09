@@ -3,1172 +3,458 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Costandino CV</title>
-    <!-- Favicon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Costandino Eleftheriadis · Frontend Engineer</title>
+    <meta name="description"
+        content="Costandino (Dino) Eleftheriadis is a Frontend Engineer in Malta with 4+ years building real-time web products in online gaming and fintech using Angular, TypeScript, NgRx and RxJS." />
+    <meta name="author" content="Costandino Eleftheriadis" />
+    <meta name="theme-color" content="#0b3d45" />
+    <link rel="canonical" href="https://dinothedeveloper.github.io/" />
+    <!-- Link previews (LinkedIn, Slack, WhatsApp...) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dinothedeveloper.github.io/" />
+    <meta property="og:title" content="Costandino Eleftheriadis · Frontend Engineer" />
+    <meta property="og:description"
+        content="Frontend Engineer in Malta building real-time web products with Angular, TypeScript, NgRx and RxJS." />
+    <meta property="og:image" content="https://dinothedeveloper.github.io/assets/img/work/dinobets-thumb.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!--Font Awesome icons-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-    <!-- CSS-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Fonts: Passion One (display), Roboto Condensed (labels), Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Passion+One:wght@400;700&family=Roboto+Condensed:wght@500;700&display=swap"
+        rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <script>
+        // Apply a saved theme before first paint so there's no flash
+        try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) { }
+    </script>
 </head>
 
-<body id="page-top">
-    <!--Navigation-->
-    <nav style="background-color: #4169e1" class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">Costandino</a>
-            <button style="background-color:#7E7E7E;"
-                class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About
-                            Me</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#stack">Skills</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#api">EXTERNAL
-                        </a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#contact">Contact
-                        </a></li>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="nav">
+        <div class="container nav-inner">
+            <a class="logo" href="#top" aria-label="Dino, back to top">DINO<span>.</span></a>
+            <nav aria-label="Main">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#toolbox">Toolbox</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+                    </svg>
+                    <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4.5" />
+                        <path
+                            d="M12 1.5v3M12 19.5v3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M1.5 12h3M19.5 12h3M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1" />
+                    </svg>
+                </button>
+                <a class="btn btn-accent btn-sm" href="assets/Costandino_Eleftheriadis_Resume.pdf" download>get my cv</a>
+                <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu"
+                    aria-controls="nav-links" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg>
+                </button>
             </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header style="background-color: #FFFFF0" class="masthead text-white text-center">
-        <div style="color: #000000;" class="container d-flex align-items-center flex-column">
-            <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
-            <h1 class="masthead-heading text-uppercase mb-0">Costandino</h1>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div style="color: #000000;" class="divider-custom-icon"><i class="fas fa-laptop"></i></div>
-                <div class="divider-custom-line"></div>
-                <div style="color: #000000;" class="divider-custom-icon"><i class="fas fa-globe"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="masthead-subheading font-weight-light mb-0">- Software Engineer -</p>
-            <p class="masthead-subheading font-weight-light mb-0">- Aspiring Machine Learning Engineer -</p>
         </div>
     </header>
 
-    <!--About Section-->
-    <section style="background-color: #4169e1" class="page-section text-white mb-0" id="about">
-        <div class="container">
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="hero-intro">
+                        <span class="avatar">
+                            <img src="assets/img/DinoAvatar.svg" alt="Cartoon avatar of Costandino (Dino) Eleftheriadis" width="264"
+                                height="280" />
+                            <span class="avatar-wave" aria-hidden="true">👋</span>
+                        </span>
+                        <p class="eyebrow eyebrow-light">Frontend Engineer<br />Malta, EU</p>
+                    </div>
+                    <h1 class="display">
+                        Hi, I'm Dino.<br />
+                        I build <span class="hl">real-time</span><br />
+                        web products.
+                    </h1>
+                    <p class="hero-sub">
+                        4+ years building customer-facing products in online gaming and fintech. I'm currently shipping
+                        sportsbook features at <strong>Betsson Group</strong> with Angular, TypeScript, NgRx and RxJS.
+                    </p>
+                    <ul class="chips" aria-label="Highlights">
+                        <li>4+ years experience</li>
+                        <li>Angular · TypeScript</li>
+                        <li>Based in Malta</li>
+                        <li>EU citizen</li>
+                    </ul>
+                    <div class="hero-ctas">
+                        <a class="btn btn-accent" href="#work">See my work
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6" />
+                            </svg></a>
+                        <a class="btn btn-ghost" href="assets/Costandino_Eleftheriadis_Resume.pdf" download>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3v12M7 10l5 5 5-5M4 21h16" />
+                            </svg>
+                            Download CV</a>
+                    </div>
+                </div>
 
-            <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
-
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-person"></i></div>
-                <div class="divider-custom-line"></div>
+                <!-- Playful "ID card" -->
+                <aside class="id-card" aria-label="Quick profile">
+                    <span class="sticker">open to chat!</span>
+                    <p class="id-label">Now</p>
+                    <p class="id-title">Intermediate Frontend Engineer</p>
+                    <p class="id-sub">Betsson Group · since Jan 2025</p>
+                    <dl class="id-rows">
+                        <div>
+                            <dt>Based</dt>
+                            <dd>Malta 🇲🇹</dd>
+                        </div>
+                        <div>
+                            <dt>Citizen</dt>
+                            <dd>Greece 🇬🇷 · South Africa 🇿🇦</dd>
+                        </div>
+                        <div>
+                            <dt>Stack</dt>
+                            <dd>Angular, NgRx, RxJS, Nx</dd>
+                        </div>
+                        <div>
+                            <dt>Learning</dt>
+                            <dd>Machine learning</dd>
+                        </div>
+                    </dl>
+                </aside>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead">Greetings, I'm Costandino, a software engineer and accomplished forex trader.
-                        My expertise lies in coding and crafting superior user experiences. In the realm of data
-                        analytics, I excel at extracting valuable insights for informed decision-making.
-                        Complementing my profession,
-                        I maintain a disciplined fitness routine and have a keen interest in running and MMA.
-                        Additionally, I engage in continuous learning through reading and demonstrate proficiency
-                        in forex trading.</p>
-                </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">In essence, I bring a sophisticated blend of technical proficiency
-                        and a commitment to excellence in all endeavors. I'm always eager to learn new things and take
-                        on challenges. Working in teams is
-                        where I shine,
-                        delivering the best results through collaboration. So if you're looking for a dedicated software
-                        engineer who codes with passion and thrives in a team environment, I'm your guy.
-                        Let's create something amazing together!</p>
-                </div>
-            </div>
-
-            <!-- About Section Button-->
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="assets/Costandino_Eleftheriadis_Resume.pdf" attributes-list download>
-                    <i class="fas fa-download me-2"></i>
-                    Download My CV
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section-->
-    <section style="background-color: #FFFFF0" class="page-section portfolio" id="portfolio">
-        <div class="container">
-            <h2 style="color: #000000" class="page-section-heading text-center text-uppercase mb-0">Portfolio</h2>
-            <br>
-            <h4 style="color: #000000" class="page-section-sub-heading text-center text-uppercase mb-0">Click icons for
-                more info about the project</h4>
-            <br>
-            <!-- <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-laptop"></i></div>
-                <div class="divider-custom-line"></div>
-            </div> -->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <h4 style="color: #000000" class="page-section-sub-heading text-center text-uppercase mb-0">Larger Projects
-            </h4>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
-                        data-bs-target="#portfolioModal_dinobets">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/dinobets.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_nsfas">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/nsfas.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
-                        data-bs-target="#portfolioModal_bettabets">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/bettabets.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_5">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/Forex.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_7">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/AriaLand.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_8">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/MetaFushko.png" alt="..." />
-                    </div>
-                </div>
-
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <h4 style="color: #000000" class="page-section-sub-heading text-center text-uppercase mb-0">Smaller
-                    Projects
-                </h4>
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/ReactToDo.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_2">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/ReactNativeToDo.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_2_1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/Api.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/FlutterCalc.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_4">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/FlutterLoginFireBase.png"
-                            alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_6">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/AyyHii.png" alt="..." />
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_9">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/GarmentGuys.png" alt="..." />
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_10">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/NFTBallersClub.png" alt="..." />
-                    </div>
-                </div>
-                <!-- <div><br></div> -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_11">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/ShapeShift.png" alt="..." />
-                    </div>
-                </div>
-                <!-- <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal_12">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/CoverImages/MoreComingSoon.png" alt="..." />
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!--TECH STACK-->
-    <section style="background-color: #4169e1" class="page-section" id="stack">
-        <div class="container">
-
-            <h2 style="color: #ffffff" class="page-section-heading text-center text-uppercase text-white">Key Skills
-            </h2>
-
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-code"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-
-            <div class="row">
-                <div class="text-center col-lg-12 ms-auto">
-                    <p style="color: #000000; font-weight: bold;" class="lead">----- CODING -----</p>
-                    <p style="color: #ffffff" class="lead">&#8226 Angular</p>
-                    <p style="color: #ffffff" class="lead">&#8226 React</p>
-                    <p style="color: #ffffff" class="lead">&#8226 JavaScript / TypeScript</p>
-                    <p style="color: #ffffff" class="lead">&#8226 HTML / CSS</p>
-                    <p style="color: #ffffff" class="lead">&#8226 C#</p>
-                    <p style="color: #ffffff" class="lead">&#8226 SQL / NoSQL</p>
-                    <p style="color: #ffffff" class="lead">&nbsp;</p>
-                    <p style="color: #000000; font-weight: bold;" class="lead">----- WEB -----</p>
-                    <p style="color: #ffffff" class="lead">&#8226 Firebase</p>
-                    <p style="color: #ffffff" class="lead">&#8226 GIT</p>
-                    <p style="color: #ffffff" class="lead">&#8226 Docker</p>
-                    <p style="color: #ffffff" class="lead">&#8226 Kubernetes</p>
-                    <p style="color: #ffffff" class="lead">&#8226 Octopus Deploy</p>
-                    <p style="color: #ffffff" class="lead">&#8226 Azure</p>
-                    <p style="color: #ffffff" class="lead">&#8226 Kibana</p>
+            <!-- Stack marquee -->
+            <div class="marquee" aria-label="Technologies I work with">
+                <div class="marquee-track">
+                    <ul>
+                        <li>Angular</li>
+                        <li>TypeScript</li>
+                        <li>NgRx</li>
+                        <li>RxJS</li>
+                        <li>Nx Monorepos</li>
+                        <li>React</li>
+                        <li>Flutter</li>
+                        <li>SCSS</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>Firebase</li>
+                        <li>Azure</li>
+                    </ul>
+                    <ul aria-hidden="true">
+                        <li>Angular</li>
+                        <li>TypeScript</li>
+                        <li>NgRx</li>
+                        <li>RxJS</li>
+                        <li>Nx Monorepos</li>
+                        <li>React</li>
+                        <li>Flutter</li>
+                        <li>SCSS</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>Firebase</li>
+                        <li>Azure</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--API-->
-    <section style="background-color: #ffffff" class="page-section" id="api">
-        <div class="container">
-
-            <h2 style="color: #000000" class="page-section-heading text-center text-uppercase">external services</h2>
-
-            <div class="divider-custom">
-                <div style="color: #000000" class="divider-custom-line"></div>
-                <div style="color: #000000" class="divider-custom-icon"><i class="fas fa-cloud"></i></div>
-                <div style="color: #000000" class="divider-custom-line"></div>
-            </div>
-            <p style="text-align: center;" class="lead">If you are wondering what the weather is like and don't want to
-                look out the window, this is for you!</p>
-
-            <div class="row">
-                <div class="wrapper">
-                    <header><i class='bx bx-left-arrow-alt' style="text-align: center;"></i></header>
-                    <section class="input-part">
-                        <p class="info-txt"></p>
-                        <div class="content">
-                            <input type="text" spellcheck="false" placeholder="Enter city name" required>
-                            <div class="separator"></div>
-                            <button>Get Device Location</button>
-                        </div>
-                    </section>
-                    <section class="weather-part">
-                        <img src="" alt="Weather Icon">
-                        <div class="temp">
-                            <span class="numb">_</span>
-                            <span class="deg">°</span>
-                        </div>
-                        <div class="weather">_ _</div>
-                        <div class="location">
-                            <i class='bx bx-map'></i>
-                            <span>_, _</span>
-                        </div>
-                        <div class="bottom-details">
-                            <div class="column feels">
-                                <i class='bx bxs-thermometer'></i>
-                                <div class="details">
-                                    <div class="temp">
-                                        <span class="numb-2">_</span>
-                                        <span class="deg">°</span>C
-                                    </div>
-                                    <p>Feels like</p>
-                                </div>
-                            </div>
-                            <div class="column humidity">
-                                <i class='bx bxs-droplet-half'></i>
-                                <div class="details">
-                                    <span>_</span>
-                                    <p>Humidity</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+        <!-- Stats -->
+        <section class="section section-cream stats-section" aria-label="Impact in numbers">
+            <div class="container stats">
+                <div class="stat reveal">
+                    <p class="stat-num">1.2M+</p>
+                    <p class="stat-label">students rely on the NSFAS app I helped build</p>
+                </div>
+                <div class="stat reveal">
+                    <p class="stat-num">80K+</p>
+                    <p class="stat-label">monthly users on the Bettabets platform I led frontend for</p>
+                </div>
+                <div class="stat reveal">
+                    <p class="stat-num">4+</p>
+                    <p class="stat-label">years shipping production frontend in gaming &amp; fintech</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section style="background-color: #4169e1" class="page-section" id="contact">
-        <div class="container">
-
-            <h2 style="color: #ffffff" class="page-section-heading text-center text-uppercase">contact information</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div style="color: #ffffff" class="divider-custom-line"></div>
-                <div style="color: #ffffff" class="divider-custom-icon"><i class="fas fa-phone"></i></div>
-                <div style="color: #ffffff" class="divider-custom-line"></div>
-            </div>
-            <p style="color: #ffffff; text-align: center;" class="lead">&#8226 Telephone: (+27) 83 262 5020</p>
-            <p style="color: #ffffff; text-align: center;" class="lead">&#8226 Email: dinoelef@gmail.com <br /> OR
-                <br /> <a style="color: rgb(0, 0, 0);" href="mailto: dinoelef@gmail.com">Click to send Email</a>
-            </p>
-        </div>
-    </section>
-
-    <!--Footer-->
-    <footer style="background-color: #4169e1" class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!--Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p class="lead mb-0">
-                        📍 Johannesburg, South Africa
-                        <br />
-                        🚀 Europe & South African Citizenship
+        <!-- Work -->
+        <section class="section" id="work">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Selected work</p>
+                    <h2 class="display-md">Stuff I've <span class="hl">shipped</span></h2>
+                    <p class="lead">Real products first, then side projects. Tap a project to see screens and details.
                     </p>
                 </div>
-                <!--Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">socials</h4>
-                    <a class="btn btn-outline-light btn-social mx-1"
-                        href="https://www.linkedin.com/in/dino-eleftheriadis-794b521a9"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/DinoTheDeveloper"><i
-                            class="fab fa-fw fa-github"></i></a>
+                <div class="work-grid" id="work-featured"></div>
+
+                <h3 class="subhead reveal">The playground</h3>
+                <div class="play-grid" id="work-playground"></div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section section-cream" id="experience">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Experience</p>
+                    <h2 class="display-md">The <span class="hl">journey</span> so far</h2>
                 </div>
-                <!--Footer About Text-->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">Thank You ❤</h4>
-                    <p class="lead mb-0">
-                        Thank you for making it this far!
-                        <br />
-                        I appreciate it
-                    </p>
+                <ol class="steps">
+                    <li class="step reveal">
+                        <p class="step-num">Step 04 · Now</p>
+                        <div class="step-head">
+                            <h3>Betsson Group</h3>
+                            <p class="step-meta">Jan 2025 – Present · Malta</p>
+                        </div>
+                        <p class="step-role">Intermediate Frontend Engineer</p>
+                        <ul>
+                            <li>Build and maintain customer-facing B2B sportsbook features in a large Nx monorepo.</li>
+                            <li>Create reusable, responsive UIs for live events, tournament lobbies, market lists and
+                                betting journeys driven by complex real-time sports data.</li>
+                            <li>Improve UI behaviour, state management and cross-browser experience across high-traffic
+                                sportsbook flows, working with product, design, QA and backend from refinement to
+                                release.
+                            </li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Angular</li>
+                            <li>TypeScript</li>
+                            <li>NgRx</li>
+                            <li>RxJS</li>
+                            <li>Nx</li>
+                        </ul>
+                    </li>
+                    <li class="step reveal">
+                        <p class="step-num">Step 03</p>
+                        <div class="step-head">
+                            <h3>Hooligan Development</h3>
+                            <p class="step-meta">Apr 2024 – Jul 2024 · Johannesburg</p>
+                        </div>
+                        <p class="step-role">Software Developer</p>
+                        <ul>
+                            <li>Contributed to the National Student Financial Aid Scheme (NSFAS) application, trusted by
+                                over 1.2 million students in South Africa.</li>
+                            <li>Optimised the Angular web app for speed, modernity and ease of use.</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Angular</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </li>
+                    <li class="step reveal">
+                        <p class="step-num">Step 02</p>
+                        <div class="step-head">
+                            <h3>Bettabets</h3>
+                            <p class="step-meta">Jun 2023 – Apr 2024 · Johannesburg</p>
+                        </div>
+                        <p class="step-role">Front-end Developer · UX/UI lead</p>
+                        <ul>
+                            <li>Led frontend and UX/UI on an online casino platform with 80,000+ monthly active users.
+                            </li>
+                            <li>Used A/B testing, heatmaps, session recordings and analytics to optimise engagement.
+                            </li>
+                            <li>Revamped the platform to position Bettabets among South Africa's leading online casinos.
+                            </li>
+                        </ul>
+                        <ul class="tags">
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>A/B testing</li>
+                        </ul>
+                    </li>
+                    <li class="step reveal">
+                        <p class="step-num">Step 01</p>
+                        <div class="step-head">
+                            <h3>Paycorp Payment Services</h3>
+                            <p class="step-meta">Jan 2022 – Jan 2023 · Johannesburg</p>
+                        </div>
+                        <p class="step-role">Software Developer · Full Stack</p>
+                        <ul>
+                            <li>Built an in-house web app to monitor and pay self-cashing ATM merchants.</li>
+                            <li>Acted as team lead, presenting progress and project updates to executives.</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Angular</li>
+                            <li>C#</li>
+                            <li>SQL</li>
+                            <li>Azure</li>
+                            <li>Containers</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Toolbox -->
+        <section class="section" id="toolbox">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Toolbox</p>
+                    <h2 class="display-md">What I <span class="hl">build</span> with</h2>
+                </div>
+                <div class="tool-grid">
+                    <div class="tool-card tool-card-feature reveal">
+                        <h3>Daily drivers</h3>
+                        <ul class="tags tags-lg">
+                            <li>Angular</li>
+                            <li>TypeScript</li>
+                            <li>NgRx</li>
+                            <li>RxJS</li>
+                            <li>Nx monorepos</li>
+                            <li>HTML</li>
+                            <li>CSS / SCSS</li>
+                        </ul>
+                    </div>
+                    <div class="tool-card reveal">
+                        <h3>Also shipped with</h3>
+                        <ul class="tags">
+                            <li>React</li>
+                            <li>React Native</li>
+                            <li>Flutter</li>
+                            <li>JavaScript</li>
+                            <li>C#</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tool-card reveal">
+                        <h3>Platforms &amp; workflow</h3>
+                        <ul class="tags">
+                            <li>Git</li>
+                            <li>Jira</li>
+                            <li>Firebase</li>
+                            <li>Azure</li>
+                            <li>Agile</li>
+                            <li>A/B testing</li>
+                        </ul>
+                    </div>
+                    <div class="tool-card reveal">
+                        <h3>Levelling up</h3>
+                        <ul class="tags">
+                            <li>Machine learning</li>
+                            <li>Data science</li>
+                            <li>GitHub Copilot cert.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section section-cream" id="faq">
+            <div class="container faq-wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">FAQ</p>
+                    <h2 class="display-md">Quick <span class="hl">answers</span></h2>
+                    <p class="lead">The things recruiters usually ask first.</p>
+                </div>
+                <div class="faq">
+                    <details class="reveal">
+                        <summary>Where are you based, and can you work in the EU?</summary>
+                        <p>I live in Malta. I'm a Greek (EU) and South African citizen, so I don't need a visa to work
+                            anywhere in the EU.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>What do you work on day to day?</summary>
+                        <p>Customer-facing B2B sportsbook features at Betsson Group: live events, tournament lobbies and
+                            market lists, all driven by real-time sports data in a large Angular + Nx monorepo.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>What's your core stack?</summary>
+                        <p>Angular, TypeScript, NgRx and RxJS, plus HTML and SCSS. I've also shipped with React,
+                            React Native, Flutter, C# and SQL.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>What are you learning right now?</summary>
+                        <p>Machine learning and data science. Recent certificates: <em>GitHub Copilot: AI for Coding
+                                &amp; Development</em>, <em>Intro to Machine Learning</em> and <em>Complete Angular
+                                Course
+                                2025</em>.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>What did you study?</summary>
+                        <p>BIT Honours in Information Systems at the University of Pretoria (2021), and a Bachelor of
+                            Computer and Information Sciences with distinction at IIE Varsity College (2018–2020).</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>Which languages do you speak?</summary>
+                        <p>English (fluent), plus some Greek and Afrikaans.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="section section-brand cta" id="contact">
+            <div class="container cta-inner reveal">
+                <p class="eyebrow eyebrow-light">Contact</p>
+                <h2 class="display">Let's build<br />something <span class="hl">great</span></h2>
+                <p class="hero-sub">Got a role, a project or just want to talk frontend? My inbox is open.</p>
+                <div class="hero-ctas cta-btns">
+                    <a class="btn btn-accent" href="mailto:dinoelef@gmail.com">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <path d="m3 7 9 6 9-6" />
+                        </svg>
+                        dinoelef@gmail.com</a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/dino-eleftheriadis-794b521a9"
+                        target="_blank" rel="noopener">
+                        <svg class="fill" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.14V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.95 1.32-1.95 2.69V21h-4V9.5Z" />
+                        </svg>
+                        LinkedIn</a>
+                    <a class="btn btn-ghost" href="https://github.com/DinoTheDeveloper" target="_blank" rel="noopener">
+                        <svg class="fill" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" />
+                        </svg>
+                        GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a class="logo" href="#top">DINO<span>.</span></a>
+            <p>© 2026 Costandino Eleftheriadis</p>
+            <a class="footer-top" href="#top">Back to top ↑</a>
         </div>
     </footer>
-    <!--Copyright-->
-    <div style="background-color: #000000" class="copyright py-4 text-center text-white">
-        <div class="container"><small>Developed by Costandino with ❤ - 2026 &copy;</small></div>
-    </div>
 
-
-
-
-    <!-- Portfolio additional section-->
-    <!-- Portfolio Modal Arialand-->
-    <div class="portfolio-modal modal fade" id="portfolioModal_7" tabindex="-1" aria-labelledby="portfolioModal_7"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">Aria Land
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">Welcome to Aria Land, an NFT website I created.
-                                    Immerse
-                                    yourself in a mesmerizing collection of NFTs, as the website I developed showcases
-                                    their beauty,
-                                    utility, and rich information. But I didn't stop there. I wanted to bring excitement
-                                    to users fingertips, so I integrated thrilling live raffles and captivating games
-                                    directly into the platform. I have also integrated gamse for users to play for their
-                                    chance to own these exclusive
-                                    NFTs. This website illustrates my passion and expertise in website development,
-                                    where art, technology, and entertainment intertwine seamlessly.
-                                </p>
-
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ArialandFull.png"
-                                    alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Project detail dialog -->
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="pd-title">
+        <div class="pd-inner">
+            <button class="icon-btn pd-close" type="button" id="pd-close" aria-label="Close">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 6l12 12M18 6 6 18" />
+                </svg>
+            </button>
+            <p class="eyebrow" id="pd-context"></p>
+            <h2 class="display-sm" id="pd-title"></h2>
+            <ul class="tags" id="pd-tags"></ul>
+            <p class="pd-desc" id="pd-desc"></p>
+            <div class="pd-gallery" id="pd-gallery"></div>
         </div>
-    </div>
-    <!-- Portfolio-->
-    <div class="portfolio-modal modal fade" id="portfolioModal_8" tabindex="-1" aria-labelledby="portfolioModal_8"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal-->
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">MetaFushko
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I created MetaFushko, a cutting-edge website
-                                    that serves as the ultimate destination for showcasing groundbreaking NFT
-                                    projects. Designed with a user-friendly interface and captivating visuals,
-                                    MetaFushko provides an immersive experience for the company to exhibit their
-                                    exceptional NFT creations. Through meticulous planning and development, I crafted an
-                                    engaging platform that allows users to explore diverse industries, including art,
-                                    entertainment, and gaming, all within the digital realm. By curating a selection of
-                                    innovative NFT projects, MetaFushko offers a seamless gateway for artists,
-                                    developers, and enthusiasts to connect with the evolving NFT community. With
-                                    MetaFushko, I aimed to redefine the boundaries of creativity and provide a platform
-                                    that celebrates the power of digital art.
-                                </p>
+    </dialog>
 
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/MetafushkoFull.png"
-                                    alt="..." />
-
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal_2_1" tabindex="-1" aria-labelledby="portfolioModal_2_1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal-->
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">REACT NATIVE
-                                    API STORE
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">
-                                    I developed a dynamic React Native Store app that exemplifies my proficiency in
-                                    mobile app development and API integration.
-                                    In creating this app, I harnessed the power of React Native to ensure a consistent
-                                    and responsive user experience across both
-                                    iOS and Android platforms. By leveraging an API, I implemented a streamlined process
-                                    where the app dynamically fetches product
-                                    images, creating a visually engaging and ever-updating storefront. The API
-                                    integration allows for real-time synchronization of
-                                    product information, ensuring that users are presented with the latest offerings. I
-                                    focused on optimizing the app's performance,
-                                    implementing efficient image loading techniques to guarantee a smooth browsing
-                                    experience.
-                                </p>
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/Api1.PNG" alt="..." />
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/Api2.PNG" alt="..." />
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/Api3.PNG" alt="..." />
-                                <br />
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal_9" tabindex="-1" aria-labelledby="portfolioModal_9"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">Garment Guys
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I developed Garment Guys, an e-commerce website
-                                    specifically designed to cater to the wholesale clothing market. As the creator of
-                                    this platform, I meticulously crafted a seamless online shopping experience for
-                                    retailers and businesses looking to purchase clothing in bulk. With a focus on
-                                    user-friendly navigation and visually appealing design, Garment Guys provides a
-                                    comprehensive catalog of high-quality wholesale garments, ranging from trendy
-                                    fashion pieces to essential basics. By integrating robust backend functionalities, I
-                                    ensured efficient inventory management, and streamlined order processing.
-                                    Additionally,I optimized the website for performance, responsiveness, and
-                                    scalability, ensuring a smooth shopping experience across various devices. Garment
-                                    Guys empowers businesses in the clothing industry to effortlessly browse, select,
-                                    and order wholesale clothing, ultimately driving their success in the competitive
-                                    market.
-                                </p>
-
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/GarmentGuysFull.png"
-                                    alt="..." />
-
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="portfolio-modal modal fade" id="portfolioModal_6" tabindex="-1" aria-labelledby="portfolioModal_6"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">AyyHii
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I developed AyyHii, an innovative website
-                                    specifically designed to showcase and sell an Ethereum Token to customers. As the
-                                    creator of this platform, I took on the challenge of developing both the website and
-                                    the underlying smart contract. Leveraging my expertise in web development and
-                                    blockchain technology, I crafted a user-friendly interface that seamlessly connects
-                                    users with the Ethereum ecosystem. Through meticulous coding and rigorous testing, I
-                                    ensured the security and integrity of the smart contract, providing customers with a
-                                    reliable and transparent token purchasing experience. The website features
-                                    comprehensive information about the Ethereum Token, including its unique features,
-                                    utility, and potential benefits. AyyHii serves as a powerful platform for
-                                    introducing and promoting the Ethereum Token as well as using the power of AI
-                                    technology to
-                                    help customers with questions on social forums such as reddit and quora.
-                                </p>
-                                <a href="https://ayyhii.com/" target="_blank">Click here</a>
-
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/AyyHiiFull.png"
-                                    alt="..." />
-
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Portfolio Modal 5-->
-    <div class="portfolio-modal modal fade" id="portfolioModal_5" tabindex="-1" aria-labelledby="portfolioModal_5"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">Forex
-                                    Calculator
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">
-                                    I designed and developed a personalised Forex calculator web app using HTML,
-                                    CSS, and JavaScript, showcasing my proficiency in front-end web technologies.
-                                    This app reflects my practical understanding of the intricacies involved in forex
-                                    trading and my ability to translate those needs into a user-friendly tool. The
-                                    calculator,
-                                    tailored to my trading strategy, provides precise information on optimal trade
-                                    parameters,
-                                    including the number of units to purchase, strategic stop-loss placement,
-                                    profit-taking targets
-                                    at 10% and 80%, and calculated risk. Leveraging JavaScript, I implemented dynamic
-                                    functionalities
-                                    to facilitate quick decision-making during trading sessions. The app's intuitive
-                                    design ensures a
-                                    seamless user experience, helping me make informed trading decisions efficiently on
-                                    platforms like
-                                    TradingView. This project not only demonstrates my technical skills but also
-                                    underscores my ability
-                                    to create customised solutions that enhance productivity and decision-making in a
-                                    professional trading context.
-                                </p>
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/Forex1.png" alt="..." />
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/Forex2.png" alt="..." />
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/Forex3.png" alt="..." />
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/Forex4.png" alt="..." />
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/Forex5.png" alt="..." />
-                                <br />
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal_10" tabindex="-1" aria-labelledby="portfolioModal_10"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">NFT Ballers
-                                    Club
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I developed NFT Ballers Club, a dynamic website
-                                    serving as a leading NFT marketing agency. As the mastermind behind this platform, I
-                                    successfully crafted a digital space where businesses and creators can thrive in the
-                                    world of non-fungible tokens. Leveraging my expertise in web development and
-                                    understanding of the NFT landscape, I meticulously designed and developed a visually
-                                    appealing and user-friendly website. NFT Ballers Club offers a range
-                                    of marketing services for NFT projects. Through persuasive
-                                    content, and eye-catching visuals, I help clients build brand
-                                    awareness, attract collectors and investors, and drive sales for their NFT
-                                    collections.
-                                </p>
-
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ballerfull.png"
-                                    alt="..." />
-
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Portfolio Modal 7-->
-    <div class="portfolio-modal modal fade" id="portfolioModal_11" tabindex="-1" aria-labelledby="portfolioModal_11"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">Shape shift
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I developed Shape Shift, an engaging website
-                                    specifically designed to cater to the fitness apparel needs of women. As the creator
-                                    of this platform, I skillfully crafted a user-friendly and visually appealing
-                                    website that offers a seamless online shopping experience website features intuitive
-                                    navigation,
-                                    comprehensive product
-                                    descriptions, and high-resolution images, allowing customers to browse and select
-                                    their desired fitness apparel with ease. In addition, I implemented secure payment
-                                    gateways and streamlined checkout processes to ensure a smooth and secure shopping
-                                    experience. I encourage customer engagement and facilitate brand
-                                    advocacy. Shape Shift is not only an online store but also a platform that empowers
-                                    women to feel confident and comfortable in their fitness journeys through quality
-                                    and stylish apparel.</p>
-
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ShapeShiftFull.png"
-                                    alt="..." />
-
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Portfolio Modal 8-->
-    <div class="portfolio-modal modal fade" id="portfolioModal_3" tabindex="-1" aria-labelledby="portfolioModal_3"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">Flutter UI
-                                    Calculator
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I developed a sleek and intuitive calculator app
-                                    using Flutter, a powerful framework for creating user interfaces. As the creator of
-                                    this app, I leveraged my expertise in Flutter development to design and build a
-                                    visually appealing and user-friendly calculator interface.
-                                </p>
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/FlutterCalcUIo.png"
-                                    alt="..." />
-                                <br />
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Portfolio Modal 9-->
-    <div class="portfolio-modal modal fade" id="portfolioModal_4" tabindex="-1" aria-labelledby="portfolioModal_4"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">Flutter
-                                    Login
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I developed a robust login and registration app
-                                    using Flutter and Firebase, demonstrating my proficiency in mobile app development
-                                    and backend integration. As the creator of this app, I harnessed the power of
-                                    Flutter's cross-platform capabilities to deliver a seamless user experience across
-                                    both iOS and Android devices. By utilizing Firebase's authentication and database
-                                    services, I implemented secure and reliable user registration and login
-                                    functionality. Users can create accounts, securely store their credentials, and
-                                    effortlessly log in to access personalized features. Leveraging Firebase's
-                                    real-time database, I seamlessly synchronized user data, allowing for personalized
-                                    app experiences and efficient data management. I also implemented error handling and
-                                    validation to ensure data integrity and a smooth registration and login process.
-                                    This Flutter and Firebase-based login and registration app showcases my ability to
-                                    create secure and engaging mobile experiences while leveraging powerful backend
-                                    technologies.
-                                </p>
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/FlutterLoginFirebase1.png" alt="..." />
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/FlutterLoginFirebase2.png" alt="..." />
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/FlutterLoginFirebase3.png" alt="..." />
-                                <br />
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Portfolio Modal 10-->
-    <div class="portfolio-modal modal fade" id="portfolioModal_1" tabindex="-1" aria-labelledby="portfolioModal_1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">React To-Do
-                                    list
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">
-                                    I developed a dynamic and efficient To-Do List web app using React, showcasing my
-                                    expertise in frontend web development. As the creator of this app, I utilized
-                                    React's component-based architecture to design a highly interactive and responsive
-                                    user interface. With a focus on usability and productivity, the To-Do List app
-                                    allows users to create, organize, and manage their tasks effectively. Leveraging
-                                    React's state management capabilities, I implemented features such as task creation,
-                                    editing, marking as complete, and deletion, providing users with a seamless and
-                                    intuitive task management experience. I incorporated responsive design principles to
-                                    ensure optimal viewing across various devices, enabling users to access their to-do
-                                    lists from desktops, tablets, and smartphones.
-                                </p>
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ToDo1.png" alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ToDo2.png" alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ToDo3.png" alt="..." />
-                                <br />
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Portfolio Modal 11-->
-    <div class="portfolio-modal modal fade" id="portfolioModal_12" tabindex="-1" aria-labelledby="portfolioModal_11"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">coming soon
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I am actively expanding my portfolio by
-                                    incorporating a diverse range of websites and applications.
-                                </p>
-                                <img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/CoverImages/MoreComingSoon.png" alt="..." />
-                                <br />
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 11-->
-    <div class="portfolio-modal modal fade" id="portfolioModal_2" tabindex="-1" aria-labelledby="portfolioModal_2"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">React Native
-                                    To-Do List
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">
-                                    I developed a dynamic and efficient To-Do List mobile application using React
-                                    Native, showcasing my
-                                    skills in mobile app development. As the creator of this app, I utilized
-                                    React Native's component-based architecture to design a highly interactive and
-                                    responsive
-                                    user interface. With a focus on usability and productivity, the To-Do List app
-                                    allows users to create and manage their tasks effectively. Leveraging
-                                    React's capabilities, I implemented features such as task creation,
-                                    editing and deletion. Providing users with a seamless and
-                                    intuitive task management experience. I incorporated responsive design principles to
-                                    ensure optimal viewing across various devices, enabling users to access their to-do
-                                    lists from Android or iOS smartphones.
-                                </p>
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/ReactNativeToDo1.jpeg" alt="..." />
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/ReactNativeToDo2.jpeg" alt="..." />
-                                <img style="width: 50%;" class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/ReactNativeToDo3.jpeg" alt="..." />
-                                <br />
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--DinoBets -->
-    <div class="portfolio-modal modal fade" id="portfolioModal_dinobets" tabindex="-1"
-        aria-labelledby="portfolioModal_dinobets" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!--Portfolio Modal - Title-->
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">DinoBets
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I developed a sophisticated online casino frontend
-                                    mock website called DinoBets, showcasing my advanced web development skills and
-                                    recent knowledge of React. After learning React, I wanted to integrate Vite to
-                                    improve performance, so I built DinoBets with a modern tech stack that’s both mobile
-                                    and desktop-friendly. The site features a live chatbot for real-time user assistance
-                                    and a live countdown to upcoming lotteries, enhancing user engagement. Exclusive
-                                    casino games and slots are integrated to capture the authentic casino experience,
-                                    and a side navigation bar with intuitive buttons allows users to quickly find
-                                    specific sections. I focused on delivering a smooth, responsive experience, ensuring
-                                    seamless functionality across various devices.
-                                </p>
-
-                                <!--Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/DinoBets_1.png"
-                                    alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/DinoBets_2.png"
-                                    alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/DinoBets_3.png"
-                                    alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/DinoBets_4.png"
-                                    alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/DinoBets_5.png"
-                                    alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/DinoBets_6.png"
-                                    alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/DinoBets_7.png"
-                                    alt="..." />
-                                <!--Portfolio Modal - Text-->
-                                <br />
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- NSFAS -->
-    <div class="portfolio-modal modal fade" id="portfolioModal_nsfas" tabindex="-1"
-        aria-labelledby="portfolioModal_nsfas" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">NSFAS
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I developed a sophisticated web application called
-                                    NSFAS (National Student Financial Aid Scheme), Which is an application made for the
-                                    South African government. This application shows my expertise in Angular and web
-                                    development. Utilising the power of Angular, I ensured a seamless and responsive
-                                    user experience across various web browsers. By integrating a robust API, I enabled
-                                    the app to dynamically retrieve and display financial aid information, providing
-                                    users with up-to-date and accurate data. The API integration ensures real-time
-                                    synchronisation of user data and financial details, allowing for a reliable and
-                                    efficient user experience. I placed a strong emphasis on optimising the
-                                    application's performance, incorporating efficient data handling and loading
-                                    techniques to deliver a smooth and user-friendly interface.
-                                </p>
-
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Tenet1.png" alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/tenet2.png" alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/tenet3.png" alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/tenet4.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <br />
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bettabets -->
-    <div class="portfolio-modal modal fade" id="portfolioModal_bettabets" tabindex="-1"
-        aria-labelledby="portfolioModal_bettabets" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 style="color: black;" class="portfolio-modal-title text-uppercase mb-0">Bettabets
-                                </h2>
-                                <br>
-                                <p style="color: black;" class="mb-4">I developed a sophisticated online casino web app,
-                                    Bettabets, that showcases my expertise in web development using HTML, CSS, and
-                                    JavaScript, along with API integration and Bootstrap. In building this web app, I
-                                    utilized HTML and CSS to craft an engaging and intuitive user interface, while
-                                    JavaScript ensured dynamic and interactive gameplay features. Leveraging APIs, I
-                                    incorporated real-time data synchronization, allowing users to access the latest
-                                    game results and betting options instantly. Bootstrap was employed to guarantee a
-                                    responsive and mobile-friendly design, providing a seamless experience across
-                                    various devices. I also focused on optimizing performance, implementing efficient
-                                    loading techniques to ensure smooth navigation and gameplay for all users.
-                                </p>
-
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/BettabetsMobile1.jpeg"
-                                    alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/BettabetsMobile2.jpeg"
-                                    alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/BettabetsMobile3.jpeg"
-                                    alt="..." />
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/BettabetsDesktop.jpeg"
-                                    alt="..." />
-                                <br />
-                                <!-- Portfolio Modal - Text-->
-                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!--Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="js/site.js"></script>
 </body>
 
 </html>
