@@ -292,7 +292,7 @@ svg.fill { fill: currentColor; stroke: none; }
 
 /* ---------- Stats ---------- */
 .stats-section { padding-block: clamp(80px, 10vw, 112px) clamp(56px, 8vw, 80px); }
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
 .stat { background: var(--surface); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
 .stat-num { font-family: var(--font-display); font-size: clamp(3.4rem, 7vw, 5rem); line-height: 0.9; color: var(--heading); }
 .stat:nth-child(2) .stat-num { color: var(--accent-text); }

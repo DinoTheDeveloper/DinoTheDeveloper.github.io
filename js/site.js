@@ -6,13 +6,6 @@ const IMG = 'assets/img/work/';
 
 const FEATURED = [
     {
-        id: 'nsfas', title: 'NSFAS', context: 'Hooligan Development · 2024', badge: 'Gov · 1.2M+ users',
-        layout: 'phone', tint: '#e8f0ec', shots: 4,
-        short: 'Angular work on South Africa\'s national student funding app, used by over 1.2 million students.',
-        desc: 'The National Student Financial Aid Scheme app is how South African students apply for and manage government funding. I built Angular features and optimised the app for speed and usability for over 1.2 million students.',
-        tags: ['Angular', 'TypeScript'],
-    },
-    {
         id: 'bettabets', title: 'Bettabets', context: 'Bettabets · 2023–2024', badge: '80K+ monthly users',
         layout: 'web', shots: 5, shotLayouts: ['web', 'phone', 'phone', 'phone', 'phone'],
         short: 'Lead frontend and UX/UI on a South African online casino with 80,000+ monthly active users.',
@@ -27,17 +20,24 @@ const FEATURED = [
         tags: ['React', 'Vite', 'Responsive'],
     },
     {
-        id: '75hard', title: '75 Hard', context: 'Personal project', badge: 'React + Firebase',
-        layout: 'phone', tint: '#e3ecfb', shots: 7,
-        short: 'A group challenge app where friends push each other through all 75 days of 75 Hard.',
-        desc: 'A 75 Hard companion app I built with React and Vite. You create or join a group with friends using a short invite code, then log daily check-ins and progress photos to Firebase. A friends-only feed shows everyone\'s progress and check-ins, a countdown calendar tracks all 75 days, and the profile page awards badges for milestones you can show off to the group.',
-        tags: ['React', 'Vite', 'Firebase'],
+        id: 'nsfas', title: 'NSFAS', context: 'Hooligan Development · 2024', badge: 'Gov · 1.2M+ users',
+        layout: 'phone', tint: '#e8f0ec', shots: 4,
+        short: 'Angular work on South Africa\'s national student funding app, used by over 1.2 million students.',
+        desc: 'The National Student Financial Aid Scheme app is how South African students apply for and manage government funding. I built Angular features and optimised the app for speed and usability for over 1.2 million students.',
+        tags: ['Angular', 'TypeScript'],
     },
     {
         id: 'revolveme', title: 'RevolveMe', context: 'Personal project', badge: 'Built for friends',
         layout: 'phone', tint: '#e8f0ec', shots: 5,
         short: 'A gym tracker with monthly workout plans, year goals, streaks and gym partners.',
         desc: 'A gym tracker I built with React and Vite for myself and close friends. Workouts are saved in Firebase and refreshed each month, and each day opens a dropdown of the exercises to do. The analytics section shows year progress with a countdown, the year goals you lock in, and your gym streak. You can add partners to log their weights alongside yours when you train together.',
+        tags: ['React', 'Vite', 'Firebase'],
+    },
+    {
+        id: '75hard', title: '75 Hard', context: 'Personal project', badge: 'React + Firebase',
+        layout: 'phone', tint: '#e3ecfb', shots: 7,
+        short: 'A group challenge app where friends push each other through all 75 days of 75 Hard.',
+        desc: 'A 75 Hard companion app I built with React and Vite. You create or join a group with friends using a short invite code, then log daily check-ins and progress photos to Firebase. A friends-only feed shows everyone\'s progress and check-ins, a countdown calendar tracks all 75 days, and the profile page awards badges for milestones you can show off to the group.',
         tags: ['React', 'Vite', 'Firebase'],
     },
     {
