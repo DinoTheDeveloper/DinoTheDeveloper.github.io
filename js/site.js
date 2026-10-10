@@ -20,6 +20,22 @@ const FEATURED = [
         tags: ['React', 'Vite', 'Responsive'],
     },
     {
+        id: 'miyora', title: 'Miyōra Collective', context: 'Client project', badge: 'Live site',
+        layout: 'web', shots: 1,
+        short: 'Website for a premium event planning and styling company in South Africa.',
+        desc: 'A refined, warm-toned website for Miyōra Collective, a premium events company in South Africa. It presents their mission, services and gallery, and includes a booking enquiry form so clients can get in touch about their event.',
+        tags: ['Website', 'Booking form', 'Responsive'],
+        link: 'https://miyoracollective.co.za/',
+    },
+    {
+        id: 'tavros', title: 'Tavros Design', context: 'Client project', badge: 'Live site',
+        layout: 'web', shots: 1,
+        short: 'Website for a design, build and renovation company based in Ashford, Kent.',
+        desc: 'A clean, conversion-focused website for Tavros Design, a local team that designs, builds and renovates kitchens, bathrooms and living spaces across Kent. It covers services, project highlights, how the process works and an FAQ, with clear calls to request a free quote.',
+        tags: ['Website', 'Lead generation', 'Responsive'],
+        link: 'https://tavrosdesign.com/',
+    },
+    {
         id: 'nsfas', title: 'NSFAS', context: 'Hooligan Development · 2024', badge: 'Gov · 1.2M+ users',
         layout: 'phone', tint: '#e8f0ec', shots: 4,
         short: 'Angular work on South Africa\'s national student funding app, used by over 1.2 million students.',
