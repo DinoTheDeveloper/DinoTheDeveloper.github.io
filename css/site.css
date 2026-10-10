@@ -386,6 +386,22 @@ svg.fill { fill: currentColor; stroke: none; }
 .tool-card-feature .tags li, :root .tool-card-feature .tags li { background: var(--accent); color: var(--accent-ink); font-weight: 700; }
 @media (max-width: 860px) { .tool-grid { grid-template-columns: 1fr; } }
 
+/* ---------- Hobbies ---------- */
+.hobby-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.hobby { background: var(--bg-alt); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; }
+.hobby h3 { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; font-size: 1.8rem; color: var(--heading); margin-bottom: 12px; line-height: 1; }
+.hobby p { color: var(--ink-soft); }
+.hobby-feature { grid-column: 1 / -1; background: var(--brand); color: #fff; }
+.hobby-feature h3 { color: #fff; font-size: 2.4rem; }
+.hobby-feature p { color: rgba(255, 255, 255, 0.85); }
+.hobby-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 18px; }
+.hobby-stats li { display: flex; align-items: center; gap: 18px; }
+.hobby-stats .stat-num { color: var(--accent); flex: none; min-width: 2.4ch; }
+.hobby-stats .stat-label { color: rgba(255, 255, 255, 0.85); margin-top: 0; }
+@media (max-width: 860px) { .hobby-grid { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .hobby-stats .stat-num { font-size: 3rem; } }
+
+
 /* ---------- FAQ ---------- */
 .faq-wrap { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
 .faq { display: grid; gap: 12px; }

@@ -189,7 +189,7 @@ if ('IntersectionObserver' in window) {
             links.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id));
         });
     }, { rootMargin: '-45% 0px -50% 0px' });
-    ['work', 'experience', 'toolbox', 'faq', 'contact'].forEach((id) => spy.observe($(id)));
+    ['work', 'experience', 'toolbox', 'faq', 'hobbies', 'contact'].forEach((id) => spy.observe($(id)));
 } else {
     document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in'));
 }
